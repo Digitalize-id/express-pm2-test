@@ -5,7 +5,7 @@ module.exports = {
       name: 'API',
       // Script for pm2 run forever
       // If use static website, remove it
-      script: 'yarn dev',
+      script: 'npm run dev',
 
       // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
 
