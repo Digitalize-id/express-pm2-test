@@ -10,7 +10,7 @@ module.exports = {
       // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
 
       // Current directory on server
-      cwd: '/home/iyansr/express-pm2-test',
+      cwd: '/home/iyansr/my-express/express-pm2-test',
       // Number of instances to be started in cluster mode
       instances: 1,
       // Enable or disable auto restart after process failure
@@ -36,8 +36,9 @@ module.exports = {
       host: '103.175.216.123',
       ref: 'origin/main',
       repo: 'git@github.com:Digitalize-id/express-pm2-test.git',
-      path: '/home/iyansr',
+      path: '/home/iyansr/my-express',
       'post-deploy': 'yarn && pm2 startOrRestart ecosystem.config.js --env production',
+      key: '/Users/pintu/Iyan/Server/iyan.pem',
     },
   },
 }
