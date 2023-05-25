@@ -37,7 +37,7 @@ module.exports = {
       ref: 'origin/main',
       repo: 'git@github.com:Digitalize-id/express-pm2-test.git',
       path: '/home/iyansr/my-express',
-      'post-deploy': 'yarn && pm2 startOrRestart ecosystem.config.js --env production',
+      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --env production',
       key: '/Users/pintu/Iyan/Server/iyan.pem',
     },
   },
