@@ -10,7 +10,7 @@ module.exports = {
       // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
 
       // Current directory on server
-      cwd: '/home/iyansr/my-express/express-pm2-test',
+      cwd: '/home/iyansr/my-express/current',
       // Number of instances to be started in cluster mode
       instances: 1,
       // Enable or disable auto restart after process failure
