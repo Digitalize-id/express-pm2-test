@@ -25,7 +25,8 @@ module.exports = {
       // ^env_\S*$ => Specify environment variables to be injected when using –env
       env_production: {
         NODE_ENV: 'production',
-        DATABASE_URL: 'mysql://lim0ifarso6lvbir37qr:pscale_pw_qEI7OaxLlzaeSOzuznlVlKwbF4bHBF4xIpEHwZlUk3z@aws.connect.psdb.cloud/digitalize-db?sslaccept=strict'
+        DATABASE_URL: process.env.DATABASE_URL,
+        PRIVATE_KEY: process.env.PRIVATE_KEY,
       },
     },
   ],
